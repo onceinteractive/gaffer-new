@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="starter" class="platform-android platform-cordova platform-webview">
+
+<ion-pane>
+    <ion-header-bar align-title="center" class="bar bar-header bar-dark">
+            <h1 class="title">You got Taffer</h1>
+    </ion-header-bar>
+    <ion-content ng-controller="PlayerController">
+        <div class="row taffer-row flip-container">
+            <div class="col col-50 red flipper" on-hold="action('/android_asset/www/audio/Justify-Yourself.m4a')" ng-click="play($event, '/android_asset/www/audio/Justify-Yourself.m4a')" >
+            <div class="col-inner front">
+                <span>Justify yourself</span>
+            </div>
+            <div class="col-inner back" back-img="/android_asset/www/img/taffer.jpg"></div>
+            </div>
+
+            <div class="col col-50 blue flipper" on-hold="action('/android_asset/www/audio/No-excuses.m4a')" ng-click="play($event, '/android_asset/www/audio/No-excuses.m4a')" >
+                <div class="col-inner front">
+                    No Excuses
+                </div>
+                <div class="col-inner back" back-img="/android_asset/www/img/taffer.jpg"></div>
+            </div>
+
+        </div>
+
+        <div class="row taffer-row flip-container">
+            <div class="col col-50 blue flipper" on-hold="action('/android_asset/www/audio/Justify-Yourself.m4a')" ng-click="play($event, '/android_asset/www/audio/Justify-Yourself.m4a')" >
+                <div class="col-inner front">
+                    Justify yourself
+                </div>
+                <div class="col-inner back" back-img="/android_asset/www/img/taffer.jpg"></div>
+            </div>
+
+            <div class="col col-50 pear-white flipper" on-hold="action('/android_asset/www/audio/No-excuses.m4a')" ng-click="play($event, '/android_asset/www/audio/No-excuses.m4a')" >
+                <div class="col-inner front">
+                    No Excuses
+                </div>
+                <div class="col-inner back" back-img="/android_asset/www/img/taffer.jpg"></div>
+            </div>
+
+        </div>
+
+        <div class="row taffer-row flip-container">
+            <div class="col col-50 blue flipper" on-hold="action('/android_asset/www/audio/Justify-Yourself.m4a')" ng-click="play($event, '/android_asset/www/audio/Justify-Yourself.m4a')" >
+                <div class="col-inner front">
+                    Justify yourself
+                </div>
+                <div class="col-inner back" back-img="/android_asset/www/img/taffer.jpg"></div>
+            </div>
+
+            <div class="col col-50 red flipper" on-hold="action('/android_asset/www/audio/No-excuses.m4a')" ng-click="play($event, '/android_asset/www/audio/No-excuses.m4a')" >
+                <div class="col-inner front">
+                    No Excuses
+                </div>
+                <div class="col-inner back" back-img="/android_asset/www/img/taffer.jpg"></div>
+            </div>
+
+        </div>
+
+        <div class="row taffer-row flip-container">
+            <div class="col col-50 red flipper" on-hold="action('/android_asset/www/audio/Justify-Yourself.m4a')" ng-click="play($event, '/android_asset/www/audio/Justify-Yourself.m4a')" >
+                <div class="col-inner front">
+                    <span>Justify yourself</span>
+                </div>
+                <div class="col-inner back" back-img="/android_asset/www/img/taffer.jpg"></div>
+            </div>
+
+            <div class="col col-50 blue flipper" on-hold="action('/android_asset/www/audio/No-excuses.m4a')" ng-click="play($event, '/android_asset/www/audio/No-excuses.m4a')" >
+                <div class="col-inner front">
+                    No Excuses
+                </div>
+                <div class="col-inner back" back-img="/android_asset/www/img/taffer.jpg"></div>
+            </div>
+
+        </div>
+        <!--
+        <flippy
+                class="fancy"
+                ng-click="flip('/android_asset/www/audio/Justify-Yourself.m4a')"
+                ng-mouseenter="flip()"
+                ng-mouseleave="flip()"
+                flip-duration="800"
+                timing-function="ease-in-out">
+
+            <flippy-front>
+                <img src="http://placehold.it/300&text=Im the front" alt="the front" />
+            </flippy-front>
+
+            <flippy-back>
+                <img src="http://placehold.it/300&text=Aaaaaand the back" alt="the back" />
+            </flippy-back>
+
+        </flippy>
+
+        <flippy
+                class="fancy"
+                ng-click="flip('/android_asset/www/audio/No-excuses.m4a')"
+                ng-mouseenter="flip()"
+                ng-mouseleave="flip()"
+                flip-duration="800"
+                timing-function="ease-in-out">
+
+            <flippy-front>
+                <img src="http://placehold.it/300&text=Im the front" alt="the front" />
+            </flippy-front>
+
+            <flippy-back>
+                <img src="http://placehold.it/300&text=Aaaaaand the back" alt="the back" />
+            </flippy-back>
+
+        </flippy>
+        -->
+    </ion-content>
+    <ion-footer-bar align-title="center" class="bar-footer bar-dark">
+        <h3 class="title">Tap to play, hold to send.</h3>
+    </ion-footer-bar>
+</ion-pane>
+</body>
+</html>

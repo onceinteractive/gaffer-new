@@ -1,0 +1,89 @@
+/* Empty. Add your own CSS if you like */
+
+/** Bug Fixes **/
+.platform-ios.platform-cordova:not(.fullscreen) .search-bar {
+    margin-top: 20px;
+}
+
+/** Header **/
+.bar-header{ background:#000 !important}
+h1.title{ text-align:center;vertical-align:middle;font-weight:bold;text-transform:uppercase;margin:0 auto;display:block;float:none;}
+
+/** Default **/
+div.row.taffer-row{ padding:0 }
+.img_hover{ width:100%;max-width:90%:display:block}
+
+.taffer-row .col-50{ height:30vh;border:1px solid black;display: table;}
+.taffer-row .front{width:100%;text-align:center;font-weight:bold;text-transform:uppercase;font-size:1.3em;vertical-align:middle }
+
+/** Cell Color **/
+.taffer-row .red{ background-color:red }
+.taffer-row .blue{ background-color: #0066CC}
+.taffer-row .pear-white{ background-color: #EAE0C8}
+
+/** Footer **/
+.bar-footer{ background: #000 !important,color:#CC9900}
+.bar-footer h3{ color:#CC9900}
+
+/** Flipped effects **/
+/* entire container, keeps perspective */
+.flip-container{
+/*perspective*/
+-webkit-perspective:1000;
+   -moz-perspective:1000;
+    -ms-perspective:1000;
+     -o-perspective:1000;
+        perspective:1000;
+}
+/* flip the pane when hovered */
+.flipped {
+/*transform*/
+-webkit-transform:rotateY(180deg);
+   -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+     -o-transform:rotateY(180deg);
+        transform:rotateY(180deg);
+}
+
+/* flip speed goes here */
+.flipper {
+/*transition*/
+-webkit-transition:0.6s;
+   -moz-transition:0.6s;
+     -o-transition:0.6s;
+        transition:0.6s;
+/*transform-style*/
+-webkit-transform-style:preserve-3d;
+   -moz-transform-style:preserve-3d;
+    -ms-transform-style:preserve-3d;
+     -o-transform-style:preserve-3d;
+        transform-style:preserve-3d;
+position:relative;
+}
+/* hide back of pane during swap */
+.front, .back{
+/*backface-visibility*/
+-webkit-backface-visibility:hidden;
+   -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+     -o-backface-visibility:hidden;
+        backface-visibility:hidden;
+         vertical-align: middle;
+         position:absolute;
+         top:40%;
+         left:0;
+}
+/* front pane, placed above back */
+.front{
+z-index:2;
+}
+/* back, initially hidden pane */
+.back{
+/*transform*/
+-webkit-transform:rotateY(180deg);
+   -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+     -o-transform:rotateY(180deg);
+        transform:rotateY(180deg);
+}
+
