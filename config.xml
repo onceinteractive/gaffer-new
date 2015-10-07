@@ -73,5 +73,5 @@
   <gap:plugin name="org.apache.cordova.file" />
   <gap:plugin name="org.apache.cordova.media" />
   <gap:plugin name="org.apache.cordova.splashscreen" />
-  <gap:plugin name="nl.xservices.plugins.SocialSharing" />
+  <gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />
 </widget>
