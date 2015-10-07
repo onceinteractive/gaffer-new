@@ -69,7 +69,7 @@
     <splash src="resources/android/splash/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
-  <gap:plugin name="com.ionic.keyboard.IonicKeyboard" />
+  <gap:plugin name="com.ionic.keyboard" />
   <gap:plugin name="org.apache.cordova.device.Device" />
   <gap:plugin name="org.apache.cordova.file.FileUtils" />
   <gap:plugin name="org.apache.cordova.media.AudioHandler" />
