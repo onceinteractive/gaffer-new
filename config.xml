@@ -68,33 +68,12 @@
     <splash src="resources/android/splash/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
-  <feature name="Keyboard">
-      <param name="android-package" value="com.ionic.keyboard.IonicKeyboard" />
-      <param name="onload" value="true" />
-  </feature>
-  <feature name="Device">
-      <param name="android-package" value="org.apache.cordova.device.Device" />
-  </feature>
-  <preference name="AndroidPersistentFileLocation" value="Internal" />
-  <feature name="File">
-      <param name="android-package" value="org.apache.cordova.file.FileUtils" />
-      <param name="onload" value="true" />
-  </feature>
-  <feature name="Media">
-      <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
-  </feature>
-  <feature name="SplashScreen">
-      <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-      <param name="onload" value="true" />
-  </feature>
-  <feature name="Whitelist">
-      <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
-      <param name="onload" value="true" />
-  </feature>
-  <feature name="Camera">
-      <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
-  </feature>
-  <feature name="SocialSharing">
-      <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
-  </feature>
+  <gap:plugin name="com.ionic.keyboard.IonicKeyboard" />
+  <gap:plugin name="org.apache.cordova.device.Device" />
+  <gap:plugin name="org.apache.cordova.file.FileUtils" />
+  <gap:plugin name="org.apache.cordova.media.AudioHandler" />
+  <gap:plugin name="org.apache.cordova.splashscreen.SplashScreen" />
+  <gap:plugin name="org.apache.cordova.whitelist.WhitelistPlugin" />
+  <gap:plugin name="nl.xservices.plugins.SocialSharing" />
+ 
 </widget>
