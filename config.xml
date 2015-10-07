@@ -73,6 +73,6 @@
   <gap:plugin name="org.apache.cordova.file" />
   <gap:plugin name="org.apache.cordova.media" />
   <gap:plugin name="org.apache.cordova.splashscreen" />
-  <gap:plugin name="org.apache.cordova.whitelist" />
+  <gap:plugin name="cordova-plugin-whitelist" />
   <gap:plugin name="nl.xservices.plugins.SocialSharing" />
 </widget>
