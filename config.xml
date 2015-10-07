@@ -70,10 +70,11 @@
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
   <gap:plugin name="com.ionic.keyboard" />
-  <gap:plugin name="org.apache.cordova.device.Device" />
-  <gap:plugin name="org.apache.cordova.file.FileUtils" />
-  <gap:plugin name="org.apache.cordova.media.AudioHandler" />
-  <gap:plugin name="org.apache.cordova.splashscreen.SplashScreen" />
+  <gap:plugin name="cordova-plugin-console" />
+  <gap:plugin name="cordova-plugin-device" />
+  <gap:plugin name="cordova-plugin-file" />
+  <gap:plugin name="org.apache.cordova.media" />
+  <gap:plugin name="cordova-plugin-splashscreen" />
   <gap:plugin name="org.apache.cordova.whitelist.WhitelistPlugin" />
-  <gap:plugin name="nl.xservices.plugins.SocialSharing" />
+  <gap:plugin name="cordova-plugin-x-socialsharing" />
 </widget>
